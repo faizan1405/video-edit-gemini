@@ -1,0 +1,21 @@
+{
+  "name": "ai-video-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "worker": "node scripts/process-job.mjs"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "ffprobe-static": "^3.1.0",
+    "formidable": "^3.5.1",
+    "next": "^14.2.18",
+    "openai": "^4.79.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
