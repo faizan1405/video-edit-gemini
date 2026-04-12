@@ -333,6 +333,70 @@ select {
   text-decoration: none;
 }
 
+/* Caption editor */
+.caption-editor-card {
+  /* Allow longer lists to scroll */
+}
+
+.caption-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.caption-card-header h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dirty-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(186, 77, 42, 0.14);
+  color: var(--accent-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+}
+
+.caption-action-row {
+  display: flex;
+  gap: 8px;
+}
+
+.caption-action-btn {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
+
+.caption-edit-input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 6px 10px;
+  background: var(--panel-strong);
+  font: inherit;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  resize: vertical;
+  color: var(--ink);
+  transition: border-color 150ms ease;
+}
+
+.caption-edit-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(186, 77, 42, 0.12);
+}
+
 @media (max-width: 1080px) {
   .workspace,
   .results-grid {

@@ -20,6 +20,9 @@ export default async function handler(request, response) {
     }
 
     response.setHeader("Content-Type", "video/mp4");
+    // Never cache — the file is overwritten on every caption re-render, so
+    // stale cached responses would show the old video after edits are applied.
+    response.setHeader("Cache-Control", "no-store");
     response.setHeader(
       "Content-Disposition",
       `inline; filename="${path.parse(job.input.originalFilename || "edited").name}-edited.mp4"`
