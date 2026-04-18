@@ -10,6 +10,7 @@
     "worker": "node scripts/process-job.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "ffmpeg-static": "^5.2.0",
     "ffprobe-static": "^3.1.0",
     "formidable": "^3.5.1",
